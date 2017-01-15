@@ -54,6 +54,8 @@ class PodcastsViewController: NSViewController, NSTableViewDataSource, NSTableVi
                 
                 if error != nil {
                     print(error!)
+                    
+                    
                 } else {
                     if data != nil {
                         let parser = Parser()
@@ -71,13 +73,15 @@ class PodcastsViewController: NSViewController, NSTableViewDataSource, NSTableVi
                                 (NSApplication.shared().delegate as? AppDelegate)?.saveAction(nil)
                                 
                                 self.getPodcasts()
+                                
+                                DispatchQueue.main.async {
+                                    self.podcastURLTextField.stringValue = ""
+                                }
                             }
                         }
                     }
                 }
                 }.resume()
-            
-            podcastURLTextField.stringValue = ""
         }
     }
     
@@ -106,6 +110,8 @@ class PodcastsViewController: NSViewController, NSTableViewDataSource, NSTableVi
     func numberOfRows(in tableView: NSTableView) -> Int {
         return podcasts.count
     }
+    
+    
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         let cell = tableView.make(withIdentifier: "podcastcell", owner: self) as? NSTableCellView
         
@@ -116,6 +122,7 @@ class PodcastsViewController: NSViewController, NSTableViewDataSource, NSTableVi
         } else {
             cell?.textField?.stringValue = "UNKNOWN ITEM"
         }
+        
         return cell
         
     }
