@@ -15,6 +15,8 @@
 		5D7C94D41E22AF99008BEBAE /* parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7C94D31E22AF99008BEBAE /* parser.swift */; };
 		5D7C94D71E22B220008BEBAE /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7C94D51E22B220008BEBAE /* SWXMLHash.swift */; };
 		5D7C94D81E22B220008BEBAE /* SWXMLHash+TypeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7C94D61E22B220008BEBAE /* SWXMLHash+TypeConversion.swift */; };
+		5D94F63A1E2BC41500CE4FCC /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94F6391E2BC41500CE4FCC /* EpisodesViewController.swift */; };
+		5D94F63C1E2BC63300CE4FCC /* TheSplitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94F63B1E2BC63300CE4FCC /* TheSplitController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		5D7C94D31E22AF99008BEBAE /* parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parser.swift; sourceTree = "<group>"; };
 		5D7C94D51E22B220008BEBAE /* SWXMLHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWXMLHash.swift; sourceTree = "<group>"; };
 		5D7C94D61E22B220008BEBAE /* SWXMLHash+TypeConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SWXMLHash+TypeConversion.swift"; sourceTree = "<group>"; };
+		5D94F6391E2BC41500CE4FCC /* EpisodesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
+		5D94F63B1E2BC63300CE4FCC /* TheSplitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheSplitController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				5D7C94CB1E22A611008BEBAE /* Info.plist */,
 				5D7C94C31E22A611008BEBAE /* Pod_Player.xcdatamodeld */,
 				5D7C94D31E22AF99008BEBAE /* parser.swift */,
+				5D94F6391E2BC41500CE4FCC /* EpisodesViewController.swift */,
+				5D94F63B1E2BC63300CE4FCC /* TheSplitController.swift */,
 			);
 			path = "Pod Player";
 			sourceTree = "<group>";
@@ -156,7 +162,9 @@
 			files = (
 				5D7C94D41E22AF99008BEBAE /* parser.swift in Sources */,
 				5D7C94D81E22B220008BEBAE /* SWXMLHash+TypeConversion.swift in Sources */,
+				5D94F63A1E2BC41500CE4FCC /* EpisodesViewController.swift in Sources */,
 				5D7C94C51E22A611008BEBAE /* Pod_Player.xcdatamodeld in Sources */,
+				5D94F63C1E2BC63300CE4FCC /* TheSplitController.swift in Sources */,
 				5D7C94D21E22AB25008BEBAE /* PodcastsViewController.swift in Sources */,
 				5D7C94D71E22B220008BEBAE /* SWXMLHash.swift in Sources */,
 				5D7C94C01E22A611008BEBAE /* AppDelegate.swift in Sources */,
@@ -314,6 +322,7 @@
 				5D7C94D01E22A611008BEBAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
